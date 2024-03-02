@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #343a40 !important;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+        .jumbotron {
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+        }
+        .section-heading {
+            margin-top: 80px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            border: none;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .profile-picture {
+            border-radius: 50%;
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+        .contact {width: 95%;
+            max-width: 500px;
+            margin: 20px auto 0px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px gray;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rizal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron">
+        <div class="container">
+            <img src="profil.jpeg" alt="Profile Picture" class="profile-picture">
+            <h1 style="color: black;">Rizal Fadly Ashzhydicky</h1>
+            <p style="color: black;">Mahasiswa</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container">
+        <h2 class="section-heading">About Me</h2>
+        <p>Saya adalah seorang mahasiswa semester 6 jurusan Sistem Informasi yang sangat tertarik dengan dunia pemrograman. Dengan latar belakang pendidikan saya, saya telah mengembangkan minat yang kuat dalam bidang pengembangan perangkat lunak dan sistem informasi. Dalam perjalanan studi saya, saya telah belajar banyak tentang konsep-konsep dasar pemrograman dan metodologi pengembangan perangkat lunak.
+
+            Saya percaya bahwa pemrograman adalah alat yang kuat untuk menciptakan solusi inovatif dan efisien bagi berbagai masalah di dunia nyata. Saya senang mempelajari bahasa pemrograman baru, eksplorasi teknologi terbaru, dan mengembangkan aplikasi yang bermanfaat.
+            
+            Selain itu, saya juga aktif dalam berbagai kegiatan di luar kurikulum akademik, termasuk proyek-proyek pengembangan perangkat lunak, kompetisi pemrograman, dan kegiatan organisasi mahasiswa yang berkaitan dengan teknologi informasi.
+            
+            Saya bersemangat untuk terus belajar dan berkembang di dunia pemrograman, serta berharap dapat memberikan kontribusi positif dalam industri teknologi informasi di masa depan.</p>
+    </div>
+
+    <!-- Portfolio Section -->
+<div id="portfolio" class="portfolio">
+    <h2 class="section-heading">Portfolio Project</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="project1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rental Mobil</h5>
+                    <p class="card-text">Rental Mobil Berbasis Web adalah sebuah platform yang dirancang <br> untuk memudahkan pengguna dalam menyewa mobil secara online. </p>
+                    <a href="#" class="btn btn-secondary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="project2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">E-perpus</h5>
+                    <p class="card-text">E-Perpus adalah sebuah aplikasi berbasis web yang bertujuan untuk memberikan akses mudah dan nyaman bagi pengguna untuk mengelola dan mengakses koleksi buku secara digital.</p>
+                    <a href="#" class="btn btn-secondary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="project3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vigenesia</h5>
+                    <p class="card-text">Vigenesia adalah aplikasi Flutter yang memberikan pengguna kutipan penyemangat setiap hari. Pengguna dapat menikmati kutipan-kutipan positif dan menerima notifikasi harian.</p>
+                    <a href="#" class="btn btn-secondary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact mb-5">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Enter Nme">
+            <label for="floatingInput">Name</label>
+          </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="example@gmail.com">
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a Massage here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Massage</label>
+        </div>
+        <div class="mybtns">
+          <button type="button" class="btn btn-dark">Submit</button>
+        </div>
+      </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            &copy; 2024 @RizalfadlyAsh
+        </div>
+    </footer>
+    
+</body>
+</html>
